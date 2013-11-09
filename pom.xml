@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<!-- ========================================================================== -->
+	<!-- POM PARENT DEFINITIONS -->
+	<!-- ========================================================================== -->
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+        	<artifactId>oss-parent</artifactId>
+        	<version>7</version>
+	</parent>
+
+	<!-- ========================================================================== -->
+	<!-- THIS POM ARTIFACT DEFINITIONS -->
+	<!-- ========================================================================== -->
+	<groupId>com.softmentor.tools</groupId>
+	<artifactId>code-analyze</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>static code analysis tools</name>
+
+
+	<!-- ========================================================================== -->
+	<!-- THIS POM PROJECT REPOSITORIES -->
+	<!-- ========================================================================== -->
+
+
+	<!-- ========================================================================== -->
+	<!-- THIS POM PROJECT RELEASE, CI SETTINGS - SCM,ISSUESMGT,DISTMGMT... -->
+	<!-- ========================================================================== -->
+
+	<properties>
+		<java-version>1.7</java-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- To take into account resource files that have been localized like 
+			for example messages_fr.properties, messages_cn.properties files -->
+		<project.build.resourceEncoding>UTF-16</project.build.resourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+
+	<!-- ========================================================================== -->
+	<!-- THIS POM PROJECT RELEASE, CI SETTINGS - SCM,ISSUESMGT,DISTMGMT... -->
+	<!-- ========================================================================== -->
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
